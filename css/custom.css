@@ -1,6 +1,39 @@
 .main-logo{
     width: 130px;
 }
+.typewriter-container {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    min-height: 1.24em;
+    text-align: left;
+    font-size: 1.7em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #000;
+    animation: caret 1s steps(1) infinite;
+}
+.btn-conv{
+    background: #000;
+    color: #fff;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.btn-conv p {
+    color: #fff !important;
+}
+.btn-conv:hover p {
+    color: #000 !important;
+}
+
+
+@keyframes caret {
+    50% { border-color: transparent; }
+}
+
 @media(max-width : 991px ) {
     .main-logo{
         width: 100px;
