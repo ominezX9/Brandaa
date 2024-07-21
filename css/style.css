@@ -597,11 +597,27 @@ ul {
 }
 
 .btn-app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #000;
+  border: 2px solid transparent;
+
 }
-.btn-app:hover {
+.btn img{
+  width: 80%;
+}
+.btn-app-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid#000;
+}
+
+.btn-app:hover, .btn-app-outline:hover {
   background: var(--main-color);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-color: transparent;
 }
 
 .btn-gradient {
