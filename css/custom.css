@@ -1,5 +1,9 @@
 .main-logo{
     width: 130px;
+    filter: invert(1) brightness(100);
+}
+.orange-fields{
+    background: var(--heading-color) !important;
 }
 .typewriter-container {
     display: inline-flex;
@@ -7,7 +11,7 @@
     vertical-align: middle;
     min-height: 1.24em;
     text-align: left;
-    font-size: 1.7em;
+    font-size: 1.6em;
     white-space: nowrap;
     overflow: hidden;
     border-right: .15em solid #000;
@@ -48,7 +52,7 @@
     flex-basis: 60%;
 }
 .btn-conv:hover .show_me {
-    left: 70%;
+    left: 68%;
     color: #000 !important;
     transition: 200ms all cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
