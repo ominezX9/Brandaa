@@ -14,19 +14,43 @@
     animation: caret 1s steps(1) infinite;
 }
 .btn-conv{
+    position: relative;
     background: #000;
     color: #fff;
-    position: relative;
+    padding: 0px 20px;
+    width: 190px;
+}
+.btn-conv .show_me {
+    position: absolute;
     display: inline-flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0px 20px;
-}
-.btn-conv p {
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
     color: #fff !important;
+    width: 200px;
+    transition: 1s all cubic-bezier(0.77, 0, 0.175, 1);
+
 }
-.btn-conv:hover p {
+
+
+.btn-conv .show_me span:nth-child(1),
+.btn-conv .show_me span:nth-child(3){
+    flex-basis: 20%;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.btn-conv .show_me span:nth-child(2){
+    position: relative;
+    top: 2px;
+    flex-basis: 60%;
+}
+.btn-conv:hover .show_me {
+    left: 70%;
     color: #000 !important;
+    transition: 200ms all cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 
 
