@@ -83,7 +83,7 @@
     color: #000 !important;
     transition: 200ms all cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
-.paddespell .col-sm-4{
+.paddespell .col-sm-12{
     padding-bottom: 18px;
 }
 .paddundshade{
@@ -94,10 +94,99 @@
     border-radius: 10px;
     height: 100% !important;
 }
+.tabs-sell{
+    margin-top: -40px;
+}
 
 .plan-selector{
-    
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+
 }
+.plan-selector button{
+    font-weight: 24px;
+    border: none;
+    padding: 7px 24px;
+    background: #fff;
+    font-weight: 400;
+}
+.plan-selector button:hover{
+    background: #000 !important;
+    color: #fff;
+}
+.plan-selector button:nth-child(1){
+    background: var(--heading-color);
+    color: #fff;
+}
+.holder {
+    overflow: hidden;
+    width: 100dvw; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+}
+
+.mover {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+    width: 200dvw; 
+    transform: translateX(-2dvw);
+    transition: transform 1s ease-in-out;
+}
+
+.mover.moveleft {
+    transform: translateX(-100vw); 
+}
+
+.mover .monthly, .mover .yearly {
+    min-width: 100dvw; 
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.my-price{
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    width: 90% !important;
+    margin: 0px auto
+}
+.my-price .price{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.my-price .price span{
+    font-weight: 200;
+}
+.my-price .padd_indo{
+    background: var(--heading-color);
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.my-price .padd_indo h4{
+    color: #fff !important;
+}
+.my-price ul li{
+    list-style-type: none;
+    padding: 5px;
+
+}
+.my-price .btn-order{
+    background: #000 !important;
+    width: 250px !important;
+    border-radius: 50px !important;
+}
+.my-price .btn-order:hover{
+    background: var(--heading-color) !important;
+    color: #fff;
+}
+
+
 
 @keyframes caret {
     50% { border-color: transparent; }
@@ -106,5 +195,11 @@
 @media(max-width : 991px ) {
     .main-logo{
         width: 100px;
+    }
+    .lev-no-show{
+        display: none;
+    }
+    .paddespell .col-sm-4{
+        margin-bottom: 20px;
     }
 }

@@ -238,6 +238,15 @@
 
     });
 
+    $(window).on('load', function () {
+        $(".yearly").on("click", function(){
+            $(".mover").removeClass("moveleft");
+        });
+        $(".onetime").on("click", function(){
+            $(".mover").addClass("moveleft");
+        });
+    })
+
 
 
 })(jQuery);
