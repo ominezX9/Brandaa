@@ -1,9 +1,31 @@
 .main-logo{
     width: 130px;
-    filter: invert(1) brightness(100);
+    filter: brightness(100);
+    transition: 100ms all ease-in-out;
 }
+.main-logo.darken-logo{
+    filter: none;
+    transition: 100ms all ease-in-out;
+}
+.main-stream{
+    color: #fff;
+}
+.main-stream p, .main-stream h1 {
+    color: #fff !important;
+}
+.slim-text{
+    font-weight: 400 !important;
+}
+.highlight{
+    font-weight: bolder;
+    color: var(--heading-color);
+}
+
 .orange-fields{
-    background: var(--heading-color) !important;
+    background: var(--heading-color);
+    padding: none;
+    background: linear-gradient(0deg, rgba(255,69,0,1) 0%, rgba(255,101,0,1) 100%) !important;
+    height: 700px !important;
 }
 .typewriter-container {
     display: inline-flex;
@@ -16,6 +38,7 @@
     overflow: hidden;
     border-right: .15em solid #000;
     animation: caret 1s steps(1) infinite;
+    color: #fff !important;
 }
 .btn-conv{
     position: relative;
@@ -23,6 +46,10 @@
     color: #fff;
     padding: 0px 20px;
     width: 190px;
+}
+.btn-conv:hover{
+    background: white !important;
+
 }
 .btn-conv .show_me {
     position: absolute;
@@ -56,7 +83,21 @@
     color: #000 !important;
     transition: 200ms all cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
+.paddespell .col-sm-4{
+    padding-bottom: 18px;
+}
+.paddundshade{
+    background: #fff;
+    padding: 18px;
+    cursor: pointer;
+    box-shadow: 0px 10px 50px -40px var(--heading-color);;
+    border-radius: 10px;
+    height: 100% !important;
+}
 
+.plan-selector{
+    
+}
 
 @keyframes caret {
     50% { border-color: transparent; }

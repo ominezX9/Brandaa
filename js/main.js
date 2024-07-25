@@ -203,11 +203,15 @@
         -----------------------------------------*/
 
         var mainMenuTop = $(".navbar-area");
+        var mainLogo = $(".main-logo");
         if ($(window).scrollTop() >= 1) {
             mainMenuTop.addClass('navbar-area-fixed');
+            mainLogo.addClass('darken-logo');
         }
         else {
             mainMenuTop.removeClass('navbar-area-fixed');
+            mainLogo.removeClass('darken-logo');
+
         }
         
         var ScrollTop = $('.back-to-top');
