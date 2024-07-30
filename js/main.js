@@ -239,11 +239,17 @@
     });
 
     $(window).on('load', function () {
+        $(".yearly").addClass('selected');
+
         $(".yearly").on("click", function(){
             $(".mover").removeClass("moveleft");
+            $(this).addClass('selected');
+            $(".onetime").removeClass('selected');
         });
         $(".onetime").on("click", function(){
             $(".mover").addClass("moveleft");
+            $(this).addClass('selected');
+            $(".yearly").removeClass('selected');
         });
     })
 
