@@ -1,5 +1,5 @@
 // $(document).ready(function() {
-//     $('.card_anim').each(function() {
+//     $('.card_anim_spec').each(function() {
 //       const $card = $(this);
   
 //       let timeout;
@@ -17,16 +17,16 @@
 //           const mouseX = e.clientX - centerX;
 //           const mouseY = e.clientY - centerY;
   
-//           const rotateX = -(mouseY / cardHeight) * 10; // Reduced the rotation multiplier
-//           const rotateY = (mouseX / cardWidth) * 10; // Reduced the rotation multiplier
+//           const rotateX = -(mouseY / cardHeight) * 5; // Reduced the rotation multiplier
+//           const rotateY = (mouseX / cardWidth) * ; // Reduced the rotation multiplier
   
-//           $card.css('transform', `translateX(-50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
+//           $card.css('transform', `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
 //         });
 //       });
   
 //       $card.on('mouseleave', function() {
 //         timeout = setTimeout(function() {
-//           $card.css('transform', 'translateX(-50%) rotateX(0deg) rotateY(0deg)');
+//           $card.css('transform', 'rotateX(0deg) rotateY(0deg)');
 //         }, 100);
 //       });
 //     });

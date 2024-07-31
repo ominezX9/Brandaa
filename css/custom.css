@@ -27,6 +27,11 @@ body {
     font-weight: 400 !important;
 }
 
+.display_screenshot{
+    padding: 50px 0px;
+    margin-bottom: 150px;
+}
+
 .slim-text span {
     color: #242424;
 }
@@ -223,6 +228,17 @@ body {
     cursor: pointer;
 }
 
+.vid-park{
+    padding: 100px 0px;
+    background: #242424;
+}
+.curvidedge{
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 7px rgba(0, 0, 0, 0.1);
+    cursor:  pointer;
+}
+
 .my-price .padd_indo h4 {
     color: #fff !important;
 }
@@ -260,11 +276,61 @@ body {
     margin: 20px auto;
 
 }
+.pl-list-inner .list-step{
+    display: flex !important;
+    flex-direction: row;
+    
+}
+.av_tars {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--heading-color);
+    border-radius: 100%;
+    padding: 20px;
+    margin-right: 20px;
 
-.av-tars img {
+}
+.av_tars img{
+    width: 90%;
+}
+
+.av-tars img{
     width: 80%;
 
 }
+
+.set-bg-black {
+    background: #242424 !important;
+}
+
+.curvedge {
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-cus-white{
+    color: #fff !important;
+}
+
+/* Basic styling for the card */
+.card_anim_spec {
+    display: block;
+    height: auto;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 10px;
+    /* Rounded corners for the card */
+}
+
+/* 3D effect on hover */
+.card_anim_spec:hover {
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    /* Shadow for 3D effect */
+}
+
+
 
 
 
@@ -413,6 +479,22 @@ body {
 @media(max-width : 991px) {
     .main-logo {
         width: 100px;
+    }
+    .cus-title{
+        text-align: center;
+    }
+    .pl-list-inner .list-step, .pl-list-inner li{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .pl-list-inner .list-step h3, .pl-list-inner li h3{
+        text-align: center;
+    }
+    .pl-list-inner .list-step p, .pl-list-inner li p{
+        text-align: center;
+        width: 400px;
     }
 
     .lev-no-show {
