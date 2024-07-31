@@ -221,7 +221,7 @@ body {
     background: var(--heading-color);
     color: #fff;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px 30px;
     width: 85%;
     transform: translateX(-50%);
@@ -244,7 +244,7 @@ body {
 }
 
 .my-price ul {
-    margin-top: 90px;
+    margin-top: 120px;
 }
 
 .my-price ul li {
@@ -299,7 +299,6 @@ body {
 
 .av-tars img{
     width: 80%;
-
 }
 
 .set-bg-black {
@@ -336,9 +335,9 @@ body {
 
 /* card animations  */
 .card_anim {
-    height: 150px;
+    height: 180px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.1s ease-in-out;
     transform-style: preserve-3d;
@@ -381,6 +380,53 @@ body {
 .card_anim:hover::after {
     opacity: 1;
 }
+
+.card_flip{
+    height: 180px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.card-container:hover .card_flip{
+    transform: translateX(-50%) rotateY(180deg);
+}
+
+.card_flip .card-front,
+.card_flip .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card_flip .card-back{
+    left:50%;
+}
+.card_flip .card-back .content img {
+    position: absolute;
+    left: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card_flip .card-front {
+    background: var(--heading-color);
+    /* background-color: #ffffff; */
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card_flip .card-back {
+    background-color: #ff6347;
+    transform: translateX(-50%) rotateY(180deg);
+}
+
 
 
 /* Basic button styling */
@@ -447,6 +493,10 @@ body {
     /* Apply bounce animation */
 }
 
+.pricing-area{
+    padding: 50px 0px;
+}
+
 /* Bounce animation for play icons */
 @keyframes bounce {
 
@@ -510,7 +560,7 @@ body {
     }
 
     .mover {
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
 
     .my-price {
