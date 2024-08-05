@@ -1702,7 +1702,7 @@ a:hover {
   height: 2px;
   width: 11px;
   top: 18px;
-  background-color: var(--main-color);
+  background: #000;
   left: 7px;
 }
 .toggle-btn .icon-left:before {
@@ -1710,7 +1710,7 @@ a:hover {
   position: absolute;
   width: 11px;
   height: 2px;
-  background-color: var(--main-color);
+  background: #000;
   content: "";
   top: -7px;
   left: 0;
@@ -1720,7 +1720,7 @@ a:hover {
   position: absolute;
   width: 11px;
   height: 2px;
-  background-color: var(--main-color);
+  background: #000;
   content: "";
   top: 7px;
   left: 0;
@@ -1733,8 +1733,8 @@ a:hover {
   position: absolute;
   height: 2px;
   width: 11px;
-  top: 18px;
-  background-color: var(--main-color);
+  top: 18px;  
+  background: #000;
   left: 18px;
 }
 .toggle-btn .icon-right:before {
@@ -1742,7 +1742,8 @@ a:hover {
   position: absolute;
   width: 11px;
   height: 2px;
-  background-color: var(--main-color);
+  background: #000;
+
   content: "";
   top: -7px;
   left: 0;
@@ -1752,7 +1753,8 @@ a:hover {
   position: absolute;
   width: 11px;
   height: 2px;
-  background-color: var(--main-color);
+  background: #000;
+
   content: "";
   top: 7px;
   left: 0;
@@ -2994,13 +2996,13 @@ a:hover {
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  background: rgba(173, 171, 244, 0.4);
+  /* background: rgba(240, 148, 0, 0.4); */
   display: inline-block;
   text-align: center;
   line-height: 38px;
-  color: #fff;
+  color: orangered;
 }
 .widget-footer-social ul li a:hover {
   background: #fff;
-  color: #1F2873;
+  color: orangered;
 }

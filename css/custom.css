@@ -3,6 +3,13 @@ body {
     overflow: hidden;
 }
 
+.bg-black-custom{
+    background: #242424;
+}
+.whithen{
+    filter: brightness(100);
+
+}
 .main-logo {
     width: 130px;
     filter: brightness(100);
@@ -496,7 +503,56 @@ body {
 .pricing-area{
     padding: 50px 0px;
 }
+.flexleft{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 12px;
+}
+.flexleft span{
+    color: #fff;
+    width: 220px;
+    padding-top: 10px;
+    text-align: left;
+}
 
+.lil-padding{
+    padding: 50px 0px 0px 0px !important;
+}
+
+.lower-bottom{
+    margin-top: 10px;
+    padding: 30px; 
+    background: var(--heading-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #242424;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+}
+.footer-list ul{
+    flex-basis: 1 1 50%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer-list ul li a{
+    text-transform: capitalize;
+}
+.cus-menu .navbar-nav li a{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.cus-menu .navbar-nav li a:hover{
+    /* color: #000 !important; */
+    background: #fff;
+
+}
 /* Bounce animation for play icons */
 @keyframes bounce {
 
@@ -533,6 +589,12 @@ body {
     .cus-title{
         text-align: center;
     }
+    .footer-list{
+        justify-content: center;
+    }
+    .footer-list ul{
+        margin: 30px 0px;
+    }
     .pl-list-inner .list-step, .pl-list-inner li{
         display: flex !important;
         flex-direction: column !important;
@@ -562,7 +624,14 @@ body {
     .mover {
         padding: 10px 0px;
     }
-
+    .flexleft{
+        align-items: center;
+    }
+    .flexleft span{
+        width: 250px;
+        padding-top: 10px;
+        text-align: center
+    }
     .my-price {
         margin-bottom: 20px;
     }
@@ -602,6 +671,9 @@ body {
 
     .btn-alt {
         margin-top: 10px !important;
+    }
+    .card-container:hover .card_flip{
+        transform: translateX(0px) rotateY(180deg);
     }
 
 }
