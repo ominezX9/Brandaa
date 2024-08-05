@@ -2209,7 +2209,7 @@ a:hover {
 
 /**pricing-area**/
 .pricing-area {
-  background: url(../img/shape/pricing-bg.png);
+  /* background: url(../img/shape/pricing-bg.png); */
   background-position: top;
   background-position: -175px 0px;
   background-repeat: no-repeat;
